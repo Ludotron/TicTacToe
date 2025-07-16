@@ -1,0 +1,70 @@
+body {
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+}
+.game-board {
+    border: 0.2em solid red;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.2em 0.2em;
+}
+
+.one-square {
+    background-color: blanchedalmond;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: xx-large;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: larger;
+    color: red;
+}
+
+.game-result {
+    height: 3em;
+    margin-bottom: 1em;
+    background-color: red;
+    color: blanchedalmond;
+    font-size: 1.5em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.one-highlighted-square {
+    background-color: red;
+    color: blanchedalmond;
+     display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: xx-large;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: larger;
+}
+
+.game-control {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: red;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    gap: 0.5em 0em;
+}
+.game-control>label {
+    /* padding: 1em 0em; */
+    color: blanchedalmond;
+}
+.game-control>input {
+    color: red;
+}
+.game-control-start {
+    grid-column: 1 / span 2;
+    background-color: blanchedalmond;
+}
